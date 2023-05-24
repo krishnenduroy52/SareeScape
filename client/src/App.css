@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Tiemann+Pro+Roman&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --colorNavText: #000000;
+  --announcementBarBgCol: #000000;
+  --announcementBarCol: #e7e7e7;
+  --mainHeaderH1: #f6f6f6;
+  --typeBaseSize: 15px;
+  --colorTextBody: #000;
+}
+
+/* Common Style */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+li {
+  list-style: none;
+}
+
+/* Top bar */
+.page-width {
+  padding: 3px 40px;
+  display: flex;
+  align-items: center;
+}
+.page-width a {
+  text-decoration: none;
+  color: var(--colorNavText);
+}
+.toolbar__content {
+  /* display: flex; */
+  display: grid;
+  /* position: relative; */
+  font-size: calc(var(--typeBaseSize) * 0.85);
+}
+.toolbar__item {
+  display: flex;
+}
+
+.toolbar__menu a {
+  display: block;
+  padding: 5px 10px;
+}
+.toolbar__item img {
+  width: 18px;
+}
+.toolbar__menu {
+  display: flex;
+}
+.right-topbar {
+  position: absolute;
+  right: 0;
+  padding-right: 40px;
+}
+.toolbar__social {
+  display: flex;
+}
+
+.toolbar__social a {
+  display: block;
+  padding: 5px 5px;
+}
+
+/* Navbar */
+.navbar-stop {
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding: 20px 0;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.navbar-stop img {
+  width: 150px;
+  margin-right: 10px;
+  float: left;
+}
+
+.navbar-stop ul {
+  display: flex;
+}
+
+.navbar-stop ul li {
+  padding: 5px 10px;
+}
+.site-nav__icons img {
+  width: 30px;
+  filter: opacity(0.5) drop-shadow(0 0 brown);
+}
+
+.site-nav__icons {
+  display: flex;
+  align-items: center;
+}
+
+.icon__fallback-text {
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+  position: absolute;
+  height: 1px;
+  width: 1px;
+}
+
+/* announcement-bar */
+.announcement-bar {
+  background-color: var(--announcementBarBgCol);
+  padding: 5px 10px;
+  color: var(--announcementBarCol);
+  text-align: center;
+}
+
+/* Header Image with content */
+.main-header-image {
+  height: 600px;
+  background-image: url("image/header-saree-image.jpg");
+  /* background-repeat: no-repeat; */
+  /* display: block; */
+  background-position: center;
+  background-size: 141%;
+  background-attachment: fixed;
+  background-position: -320px -100px;
+}
+
+.main-header-image-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--mainHeaderH1);
+  text-shadow: 2px 2px 11px rgba(0, 0, 0, 0.5);
+}
+.main-header-image-content p {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.main-header-image-content h1 {
+  font-family: "Tiemann Pro Roman";
+  text-align: center;
+  font-size: 53px;
+  /* animation: raiseUp 1s ease-in-out infinite alternate; */
+  transform: translateY(50px);
+  opacity: 0;
+  animation: raiseUp 1s ease-out 0.5s forwards;
+}
+
+.btn-shop {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 20px;
+}
+
+.btn-shop button {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+/* category-sarees */
+.category-sarees {
+  padding: 10px 40px;
+  margin-top: 40px;
+}
+
+.category-wrap {
+  display: grid;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  grid-template-columns: repeat(4, 1fr);
+}
+.category-card a {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 15px;
+  width: 300px;
+  height: 300px;
+}
+
+.category-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s all ease-in-out;
+}
+
+.category-card span {
+  padding: 10px;
+  width: fit-content;
+  text-align: center;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  line-height: 1em;
+  color: var(--colorTextBody);
+}
+
+.category-card img:hover {
+  transform: scale(1.07);
+}
+
+/* festive collection */
+
+.festive-collection-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+  padding: 0 40px;
+}
+
+.festive-products {
+  position: relative;
+  padding: 10px 0;
+}
+
+.festive-products a {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  overflow: hidden;
+  width: 230px;
+}
+
+.festive-products img {
+  width: 100%;
+  height: auto;
+}
+
+.festive-products .sale {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: black;
+  color: white;
+  padding: 4px 8px;
+  font-weight: bold;
+}
+
+.product-details {
+  text-align: center;
+  margin-top: 8px;
+}
+
+.product-price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.product-price .money {
+  font-weight: bold;
+}
+
+.grid-product__price--savings {
+  margin-top: 4px;
+}
+
+@keyframes raiseUp {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
