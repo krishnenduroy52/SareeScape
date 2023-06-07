@@ -218,7 +218,8 @@ li {
 
 /* festive collection */
 
-.festive-collection-container {
+.festive-collection-container,
+.collection-container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   justify-items: center;
@@ -267,12 +268,23 @@ li {
   margin-top: 8px;
 }
 
+.money-sale {
+  text-decoration: line-through;
+}
+.money {
+  margin-left: 10px;
+}
 .product-price .money {
   font-weight: bold;
 }
 
 .grid-product__price--savings {
   margin-top: 4px;
+}
+
+/* ITEMS for SILK */
+.container {
+  padding: 0 40px;
 }
 
 @keyframes raiseUp {
