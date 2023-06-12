@@ -50,6 +50,10 @@ const productSchema = new mongoose.Schema({
       default: [],
     },
   },
+  categories: {
+    type: [String], // Array of strings for categories
+    default: [],
+  },
 });
 
 module.exports = mongoose.model("Product", productSchema);

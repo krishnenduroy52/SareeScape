@@ -9,14 +9,26 @@ router.get("/", async (req, res) => {
     res.json(products);
   } catch (error) {
     console.error(error);
-    res.status(500).json({ error: "Server error" });
+    res.status(500).json({ error: "Server Error" });
+  }
+});
+
+router.get("/q/:category", async (req, res) => {
+  try {
+    // console.log("Hello");
+    const { category } = req.params;
+    const products = await Product.find({ categories: category });
+    res.json(products);
+  } catch (error) {
+    console.log(error);
+    res.status(500).json({ error: "Server Error" });
   }
 });
 
 // Create a new product
 router.post("/add-product", async (req, res) => {
   try {
-    const { title, sku, price, quantity, options } = req.body;
+    const { title, sku, price, quantity, options, categories } = req.body;
 
     const product = new Product({
       title,
@@ -24,6 +36,7 @@ router.post("/add-product", async (req, res) => {
       price,
       quantity,
       options,
+      categories,
     });
 
     const savedProduct = await product.save();

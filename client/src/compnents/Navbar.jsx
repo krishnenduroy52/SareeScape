@@ -16,16 +16,16 @@ const Navbar = () => {
             <a href="/collection?q=cotton">
               <li>COTTON</li>
             </a>
-            <a>
+            <a href="/collection?q=linen">
               <li>LINEN</li>
             </a>
-            <a>
+            <a href="/collection?q=regional">
               <li>REGIONAL</li>
             </a>
-            <a>
+            <a href="/collection?q=banarasia">
               <li>BANARASIA</li>
             </a>
-            <a>
+            <a href="/collection?q=designer">
               <li>DESIGNER SAREES</li>
             </a>
           </ul>
