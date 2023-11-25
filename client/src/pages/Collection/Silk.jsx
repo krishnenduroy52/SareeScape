@@ -8,7 +8,7 @@ const Silk = () => {
   useEffect(() => {
     const query = "silk";
     axios
-      .get(`https://sareeapi.vercel.app/products/q/${query}`)
+      .get(`https://sareeapi.vercel.app/products/q//${query}`)
       .then((response) => {
         const products = response.data;
         setItems(products);
