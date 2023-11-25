@@ -1,9 +1,9 @@
-require("dotenv").config();
-
 const express = require("express");
 const cors = require("cors");
 const app = express();
 const mongoose = require("mongoose");
+
+require("dotenv").config();
 
 // All Schema
 const User = require("./Models/userModel");
@@ -19,9 +19,13 @@ try {
   console.log("Error: ", e);
 }
 
+app.get("/", (req, res) => {
+  res.send("Hello World");s
+});
+
 app.use("/user", require("./Routers/user-router"));
 app.use("/products", require("./Routers/product-router"));
 
-app.listen(process.env.PORT, () => {
+app.listen(process.env.PORT || 5000, () => {
   console.log(process.env.PORT + " Is running");
 });
