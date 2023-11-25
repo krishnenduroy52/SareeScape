@@ -26,6 +26,6 @@ app.get("/", (req, res) => {
 app.use("/user", require("./Routers/user-router"));
 app.use("/products", require("./Routers/product-router"));
 
-app.listen(process.env.PORT || 5000, () => {
+app.listen(process.env.PORT, () => {
   console.log(process.env.PORT + " Is running");
 });
