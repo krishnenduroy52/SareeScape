@@ -9,8 +9,6 @@ import Festivecollection from "../compnents/Festtivecollection";
 const HomePage = () => {
   return (
     <div>
-      <Navbar />
-      <Blacktagline />
       <Homepagecontent />
       <Category />
       <Homepageposter />

@@ -5,6 +5,7 @@ function registrationModel() {
   const [state, setState] = useState({
     fname: "",
     lname: "",
+    email: "",
     hashedAndSaltedPassword: "",
     country: "",
     street1: "",
@@ -25,6 +26,7 @@ function registrationModel() {
     const {
       fname,
       lname,
+      email,
       hashedAndSaltedPassword,
       country,
       street1,
@@ -43,6 +45,7 @@ function registrationModel() {
     const data = {
       fname,
       lname,
+      email,
       hashedAndSaltedPassword,
       address: {
         country,
@@ -64,7 +67,7 @@ function registrationModel() {
     console.log(data);
     try {
       const response = await axios.post(
-        "http://localhost:2000/user/register",
+        "https://sareeapi.vercel.app/user/register",
         data
       );
       console.log(response.data);
@@ -94,6 +97,20 @@ function registrationModel() {
           type="text"
           value={state.lname}
           name="lname"
+          onChange={(event) =>
+            setState((prev) => ({
+              ...prev,
+              [event.target.name]: event.target.value,
+            }))
+          }
+        />
+      </label>
+      <label>
+        Email Id:
+        <input
+          type="text"
+          value={state.email}
+          name="email"
           onChange={(event) =>
             setState((prev) => ({
               ...prev,

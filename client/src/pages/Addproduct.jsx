@@ -19,7 +19,7 @@ const AddProduct = () => {
 
     try {
       const response = await fetch(
-        "http://localhost:2000/products/add-product",
+        "https://sareeapi.vercel.app/products/add-product",
         {
           method: "POST",
           headers: {

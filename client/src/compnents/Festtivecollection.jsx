@@ -23,14 +23,14 @@ const Festivecollection = () => {
                 ₹ 6,844.00 INR
               </span>
               <span
-                class="money"
+                className="money"
                 doubly-currency-inr="345000"
                 doubly-currency="INR"
               >
                 ₹ 3,450.00 INR
               </span>
             </div>
-            <span class="grid-product__price--savings">Save 50%</span>
+            <span className="grid-product__price--savings">Save 50%</span>
           </div>
         </a>
       </div>
@@ -51,14 +51,14 @@ const Festivecollection = () => {
                 ₹ 6,499.00 INR
               </span>
               <span
-                class="money"
+                className="money"
                 doubly-currency-inr="345000"
                 doubly-currency="INR"
               >
                 ₹ 1,950.00 INR
               </span>
             </div>
-            <span class="grid-product__price--savings">Save 50%</span>
+            <span className="grid-product__price--savings">Save 50%</span>
           </div>
         </a>
       </div>
@@ -79,14 +79,14 @@ const Festivecollection = () => {
                 ₹ 18,999.00 INR
               </span>
               <span
-                class="money"
+                className="money"
                 doubly-currency-inr="345000"
                 doubly-currency="INR"
               >
                 ₹ 8,999.00
               </span>
             </div>
-            <span class="grid-product__price--savings">Save 50%</span>
+            <span className="grid-product__price--savings">Save 50%</span>
           </div>
         </a>
       </div>
@@ -110,14 +110,14 @@ const Festivecollection = () => {
                 ₹ 6,844.00 INR
               </span>
               <span
-                class="money"
+                className="money"
                 doubly-currency-inr="345000"
                 doubly-currency="INR"
               >
                 ₹ 3,450.00 INR
               </span>
             </div>
-            <span class="grid-product__price--savings">Save 50%</span>
+            <span className="grid-product__price--savings">Save 50%</span>
           </div>
         </a>
       </div>
@@ -138,14 +138,14 @@ const Festivecollection = () => {
                 ₹ 10,000.00 INR
               </span>
               <span
-                class="money"
+                className="money"
                 doubly-currency-inr="345000"
                 doubly-currency="INR"
               >
                 ₹ 5,000.00 INR
               </span>
             </div>
-            <span class="grid-product__price--savings">Save 50%</span>
+            <span className="grid-product__price--savings">Save 50%</span>
           </div>
         </a>
       </div>

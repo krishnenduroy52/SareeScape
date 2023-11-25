@@ -2,10 +2,10 @@ import React from "react";
 
 const Topbar = () => {
   return (
-    <div class="page-width">
-      <div class="toolbar__content">
-        <div class="toolbar__item menu">
-          <ul class="toolbar__menu">
+    <div className="page-width">
+      <div className="toolbar__content">
+        <div className="toolbar__item menu">
+          <ul className="toolbar__menu">
             <li>
               <a href="/pages/about-us">About Us</a>
             </li>
@@ -20,8 +20,8 @@ const Topbar = () => {
             </li>
           </ul>
         </div>
-        <div class="toolbar__item right-topbar">
-          <ul class="inline-list toolbar__social">
+        <div className="toolbar__item right-topbar">
+          <ul className="inline-list toolbar__social">
             <li>
               <a
                 target="_blank"
