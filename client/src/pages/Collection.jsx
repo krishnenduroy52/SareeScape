@@ -13,7 +13,7 @@ const Collection = () => {
   const [items, setItems] = useState("");
   useEffect(() => {
     axios
-      .get(`https://sareeapi.vercel.app/q/${query}`)
+      .get(`https://sareeapi.vercel.app/products/q/${query}`)
       .then((response) => {
         // Handle the response data
         const products = response.data;
