@@ -16,6 +16,7 @@
     "react-router-dom": "^6.11.1",
     "mdb-react-ui-kit": "^6.1.0"
   },
+  "proxy": "https://sareeapi.vercel.app",
   "devDependencies": {
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
